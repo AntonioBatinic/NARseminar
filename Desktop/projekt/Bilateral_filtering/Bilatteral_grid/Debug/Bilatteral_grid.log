@@ -1,0 +1,121 @@
+﻿Build started 2.6.2017. 23:05:58.
+     1>Project "C:\Users\DEX\Downloads\20072300_dpc_project\Bilatteral_grid\Bilatteral_grid.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D_MBCS /I../libs/ /I../libs/ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c C:\Users\DEX\Downloads\20072300_dpc_project\Bilatteral_grid\filtering.cu 
+     1>Project "C:\Users\DEX\Downloads\20072300_dpc_project\Bilatteral_grid\Bilatteral_grid.vcxproj" (1) is building "C:\Users\DEX\Downloads\20072300_dpc_project\Bilatteral_grid\Bilatteral_grid.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file filtering.cu...
+         cmd.exe /C "C:\Users\DEX\AppData\Local\Temp\tmpf149219f4ef744c8b4003d59b54b05af.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I../libs/ -I../libs/ -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0 --ptxas-options=-v --machine 32 --compile -cudart static  -g   -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o Debug\filtering.cu.obj "C:\Users\DEX\Downloads\20072300_dpc_project\Bilatteral_grid\filtering.cu"
+         
+         C:\Users\DEX\Downloads\20072300_dpc_project\Bilatteral_grid>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I../libs/ -I../libs/ -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0 --ptxas-options=-v --machine 32 --compile -cudart static  -g   -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o Debug\filtering.cu.obj "C:\Users\DEX\Downloads\20072300_dpc_project\Bilatteral_grid\filtering.cu" 
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(24): warning : a __host__ function("gaussian1d") redeclared with __host__ __device__, hence treated as a __host__ __device__ function
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(50): warning : a __host__ function("gaussian2d") redeclared with __host__ __device__, hence treated as a __host__ __device__ function
+         ptxas info    : 0 bytes gmem
+         ptxas info    : Function properties for _Zmlf6float3
+             16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z21bilateralFilterGPU_v6P6float35uint2iPfff' for 'sm_20'
+         ptxas info    : Function properties for _Z21bilateralFilterGPU_v6P6float35uint2iPfff
+             496 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 27 registers, 544 bytes cumulative stack size, 64 bytes cmem[0], 4 textures
+         ptxas info    : Function properties for _Z18gaussian1d_gpu_regfff
+             8 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas info    : Function properties for _Z3powfi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z21bilateralFilterGPU_v2P6float3S0_5uint2iPff' for 'sm_20'
+         ptxas info    : Function properties for _Z21bilateralFilterGPU_v2P6float3S0_5uint2iPff
+             112 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 36 registers, 160 bytes cumulative stack size, 60 bytes cmem[0], 4 textures
+         ptxas info    : Function properties for gaussian1d
+             16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+         ptxas info    : Compiling entry function '_Z21bilateralFilterGPU_v4P6float35uint2iPff' for 'sm_20'
+         ptxas info    : Function properties for _Z21bilateralFilterGPU_v4P6float35uint2iPff
+             496 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 36 registers, 544 bytes cumulative stack size, 60 bytes cmem[0], 4 textures
+         ptxas info    : Function properties for _Z9idx_to_coj5uint2
+             16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _ZN61_INTERNAL_44_tmpxft_00001b90_00000000_5_filtering_cpp1_ii_tex10make_uint2Ejj
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z21bilateralFilterGPU_v8P6float35uint2iPfff' for 'sm_20'
+         ptxas info    : Function properties for _Z21bilateralFilterGPU_v8P6float35uint2iPfff
+             480 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 29 registers, 528 bytes cumulative stack size, 64 bytes cmem[0], 4 textures
+         ptxas info    : Function properties for _Zpl6float3S_
+             32 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z21bilateralFilterGPU_v5P6float35uint2iPfff' for 'sm_20'
+         ptxas info    : Function properties for _Z21bilateralFilterGPU_v5P6float35uint2iPfff
+             480 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 27 registers, 528 bytes cumulative stack size, 64 bytes cmem[0], 4 textures
+         ptxas info    : Function properties for gaussian2d
+             16 bytes stack frame, 16 bytes spill stores, 16 bytes spill loads
+         ptxas info    : Function properties for _Z9co_to_idx5uint2S_
+             16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z21bilateralFilterGPU_v1P6float3S0_5uint2iff' for 'sm_20'
+         ptxas info    : Function properties for _Z21bilateralFilterGPU_v1P6float3S0_5uint2iff
+             112 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 36 registers, 160 bytes cumulative stack size, 60 bytes cmem[0], 4 textures
+         ptxas info    : Function properties for _Z14gaussian1d_gpuff
+             16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+         ptxas info    : Function properties for _Z8_Pow_intIfET_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z21bilateralFilterGPU_v3P6float3S0_5uint2iPff' for 'sm_20'
+         ptxas info    : Function properties for _Z21bilateralFilterGPU_v3P6float3S0_5uint2iPff
+             112 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 36 registers, 160 bytes cumulative stack size, 60 bytes cmem[0], 4 textures
+         ptxas info    : Function properties for _Zml6float3S_
+             32 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Function properties for _ZN61_INTERNAL_44_tmpxft_00001b90_00000000_5_filtering_cpp1_ii_tex11make_float3Efff
+             16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Compiling entry function '_Z21bilateralFilterGPU_v7Pf5uint2iS_ff' for 'sm_20'
+         ptxas info    : Function properties for _Z21bilateralFilterGPU_v7Pf5uint2iS_ff
+             144 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 31 registers, 160 bytes cumulative stack size, 64 bytes cmem[0], 4 textures
+     1>CUDACOMPILE : nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+         filtering.cu
+     1>C:\Users\DEX\Downloads\20072300_dpc_project\libs\cuda/float_util.hcu(327): warning C4244: 'return' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(28): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(54): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(68): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(656): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(699): warning C4018: '<' : signed/unsigned mismatch
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(728): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(783): warning C4018: '<' : signed/unsigned mismatch
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(808): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(820): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(831): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(849): warning C4018: '<' : signed/unsigned mismatch
+     1>C:/Users/DEX/Downloads/20072300_dpc_project/Bilatteral_grid/filtering.cu(896): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>Done Building Project "C:\Users\DEX\Downloads\20072300_dpc_project\Bilatteral_grid\Bilatteral_grid.vcxproj" (CudaBuildCore target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../libs/ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\libs\common\error.c ..\libs\cuda\cuda_utilities.c
+         cuda_utilities.c
+         error.c
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../libs/ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\libs\common\image2d.cpp hr_time.cpp main.cpp spatial_filers.cpp
+         spatial_filers.cpp
+     1>c:\users\dex\downloads\20072300_dpc_project\bilatteral_grid\spatial_filers.cpp(71): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         main.cpp
+         hr_time.cpp
+         image2d.cpp
+     1>c:\users\dex\downloads\20072300_dpc_project\libs\common\image2d.cpp(43): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\dex\downloads\20072300_dpc_project\libs\common\image2d.cpp(70): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\dex\downloads\20072300_dpc_project\libs\common\image2d.cpp(91): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\dex\downloads\20072300_dpc_project\libs\common\image2d.cpp(92): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\dex\downloads\20072300_dpc_project\libs\common\image2d.cpp(93): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\DEX\Downloads\20072300_dpc_project\Debug\Bilateral_filtering.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\Win32" cudart.lib cufft.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\DEX\Downloads\20072300_dpc_project\Debug\Bilateral_filtering.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\DEX\Downloads\20072300_dpc_project\Debug\Bilateral_filtering.lib" /MACHINE:X86 Debug\filtering.cu.obj
+         Debug\error.obj
+         Debug\image2d.obj
+         Debug\cuda_utilities.obj
+         Debug\hr_time.obj
+         Debug\main.obj
+         Debug\spatial_filers.obj
+     1>LINK : fatal error LNK1104: cannot open file 'cufft.lib'
+     1>Done Building Project "C:\Users\DEX\Downloads\20072300_dpc_project\Bilatteral_grid\Bilatteral_grid.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:08.56

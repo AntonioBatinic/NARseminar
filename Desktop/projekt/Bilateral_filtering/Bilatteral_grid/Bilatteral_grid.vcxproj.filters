@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\libs\common\error.c">
+      <Filter>libs\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\cuda\cuda_utilities.c">
+      <Filter>libs\cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\common\image2d.cpp">
+      <Filter>libs\common</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="spatial_filers.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="hr_time.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libs\common\error.h">
+      <Filter>libs\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\common\image2d.h">
+      <Filter>libs\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\cuda\cuda_utilities.h">
+      <Filter>libs\cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="spatial_filters.h" />
+    <ClInclude Include="filtering.h" />
+    <ClInclude Include="hr_time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="libs">
+      <UniqueIdentifier>{ed7316b2-78e3-4c46-98fc-d6eca63988b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\common">
+      <UniqueIdentifier>{b6306418-3e93-4b35-8e1c-93fc07723627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\cuda">
+      <UniqueIdentifier>{09bf2f1d-d769-4afa-901b-1253de86def3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\libs\cuda\float_util.hcu">
+      <Filter>libs\cuda</Filter>
+    </None>
+    <None Include="..\libs\cuda\float_util_device.hcu">
+      <Filter>libs\cuda</Filter>
+    </None>
+    <None Include="..\libs\cuda\uint_util.hcu">
+      <Filter>libs\cuda</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="filtering.cu" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,59 @@
+﻿Build started 5.6.2017. 19:09:49.
+     1>Project "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\Bilatteral_grid\Bilatteral_grid.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D_MBCS /I../libs/ /I../libs/ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\Bilatteral_grid\filtering.cu" 
+     1>Project "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\Bilatteral_grid\Bilatteral_grid.vcxproj" (1) is building "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\Bilatteral_grid\Bilatteral_grid.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file filtering.cu...
+         cmd.exe /C "C:\Users\DEX\AppData\Local\Temp\tmp277c85c65d4a4876ab1f64ffb1feb7cb.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I../libs/ -I../libs/ -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static    -use_fast_math -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Ox /FS /Zi  /MD " -o x64\Release\filtering.cu.obj "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\Bilatteral_grid\filtering.cu"
+         
+         C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\Bilatteral_grid>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I../libs/ -I../libs/ -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static    -use_fast_math -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Ox /FS /Zi  /MD " -o x64\Release\filtering.cu.obj "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\Bilatteral_grid\filtering.cu" 
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(24): warning : a __host__ function("gaussian1d") redeclared with __host__ __device__, hence treated as a __host__ __device__ function
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(50): warning : a __host__ function("gaussian2d") redeclared with __host__ __device__, hence treated as a __host__ __device__ function
+         ptxas info    : 0 bytes gmem
+         ptxas info    : Compiling entry function '_Z20bilateralFilterGPU_vPf5uint2iS_ff' for 'sm_20'
+         ptxas info    : Function properties for _Z20bilateralFilterGPU_vPf5uint2iS_ff
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas info    : Used 22 registers, 72 bytes cmem[0], 1 textures
+     1>CUDACOMPILE : nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+         filtering.cu
+     1>C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\libs\cuda/float_util.hcu(327): warning C4244: 'return' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(28): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(54): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(68): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(149): warning C4018: '<' : signed/unsigned mismatch
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(174): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(186): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(197): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>C:/Users/DEX/Documents/Visual Studio 2013/Projects/Bilateral_filtering/Bilatteral_grid/filtering.cu(215): warning C4018: '<' : signed/unsigned mismatch
+     1>Done Building Project "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\Bilatteral_grid\Bilatteral_grid.vcxproj" (CudaBuildCore target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I../libs/ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt main.cpp spatial_filers.cpp
+         main.cpp
+         spatial_filers.cpp
+     1>spatial_filers.cpp(71): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\x64\Release\Bilateral_filtering.exe" /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64" cudart.lib cufft.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\x64\Release\Bilateral_filtering.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\x64\Release\Bilateral_filtering.lib" /MACHINE:X64 x64\Release\filtering.cu.obj
+         x64\Release\error.obj
+         x64\Release\image2d.obj
+         x64\Release\cuda_utilities.obj
+         x64\Release\hr_time.obj
+         x64\Release\main.obj
+         x64\Release\spatial_filers.obj
+         Generating code
+         Finished generating code
+         Bilatteral_grid.vcxproj -> C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\x64\Release\Bilateral_filtering.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart*.dll" "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\x64\Release\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart*.dll" "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\x64\Release\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart*.dll" "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\x64\Release\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart32_80.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\cudart64_80.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\Users\DEX\Documents\Visual Studio 2013\Projects\Bilateral_filtering\Bilatteral_grid\Bilatteral_grid.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.94
